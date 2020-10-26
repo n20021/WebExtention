@@ -12,6 +12,7 @@ input[type="email"] {
 	padding:  8px;
 	width: 100%;
 	font-size:16px;
+	border-radius:  6px;
 }
 
 textarea {
@@ -20,6 +21,7 @@ textarea {
 	width:100%;
 	height:200px;
 	font-size:16px;
+	border-radius:  6px;
 }
 
 .submit-p{
@@ -43,4 +45,9 @@ input[type="submit"]:hover {
 
 input[type="submit"]:active {
 	background: linear-gradient(0deg, #0074d8, #b6d6f7);
+}
+
+input[type="text"],
+input[type="email"]:foucs {
+	background-color:  #e2ecf6;
 }
