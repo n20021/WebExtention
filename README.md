@@ -14,3 +14,5 @@
 10. chapter10「[テーブル](chapter10/ch10-table.html)」
 11. chapter11「[標準的なフォームの例](chapter11/ch11-form.html)」
 . Task01 「[課題](Task01/index.html)」
+12. chapter12「[ページ全体のレイアウトとナビゲーション](chapter12)」
+
