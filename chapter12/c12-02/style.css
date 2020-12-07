@@ -7,8 +7,13 @@ body {
 .container {
 	padding: 0 16px 0 16px;
 	border: solid 1px #482;
+	max-width: 1000px;
 	margin: 0 auto 0 auto;
-	width: 1000px;
+}
+
+section .container {
+	display: flex;
+	flex-flow: column;
 }
 
 main p:last-child{
@@ -36,16 +41,22 @@ main p:last-child{
 	border: solid 1px #00ff00;
 }
 
-.main-inner {
+main {
 	background: #fffde3;
 	height: 400px;
 	padding: 20px 10px 20px 10px;
 	border: solid 1px #00ff00;
 }
 
-.sidebar-inner {
+.sidebar1 {
 	background: #c0f5b9;
 	padding: 20px 10px 20px 10px;
+	border: solid 1px #00ff00;
+}
+
+.sidebar2{
+	padding: 20px 10px 20px 10px;
+	background: #c0f5b9;
 	border: solid 1px #00ff00;
 }
 
@@ -55,10 +66,20 @@ main p:last-child{
 	border: solid 1px #00ff00;
 }
 
-nav {
-	margin-bottom: 20px;
-}
-
-footer{
-	margin-top: 20px;
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;
+	}
+	main {
+		flex: 1 1 auto;
+		order: 2;
+	}
+	.sidebar1 {
+		flex: 0 0 250px;
+		order: 1;
+	}
+	.sidebar2 {
+		flex: 0 0 250px;
+		order: 3;
+	}
 }
